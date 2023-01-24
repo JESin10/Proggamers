@@ -1,6 +1,6 @@
 function solution(my_string, letter) {
     var answer = '';
-    answer = my_string.replaceAll(letter,'');
+    answer = my_string.replaceAll(letter,'');  // replace는 문자열, replaceAll은 정규식
     return answer;
 }
 
