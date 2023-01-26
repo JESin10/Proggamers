@@ -1,10 +1,14 @@
+//parseInt를 사용한 답안
 function solution(money) {
-    let result = [];
-    let coffee = 5500;
-    let order = parseInt(money/coffee);
-    let change = money-(coffee*order); 
+    let order = parseInt(money/5500);
+    let change = money-(5500*order); 
     result = [order,change];
     return result;
-    
-    
 }
+
+//Math.floor로 해본 답안
+// function solution(money) {
+//     let order = Math.floor(money/5500);
+//     let change = money-(5500*order); 
+//     return [order,change];    
+// }
