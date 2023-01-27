@@ -12,12 +12,7 @@ function solution(a, b) {
     for(let i=1;i<a;i++){   //0월부터가 아니므로 1부터시작 주의
         answer +=Eachdate[i-1];
     }    
-    console.log((answer+b)%7)
+    //console.log((answer+b)%7)
     return day[(answer+b)%7];
 }
-    
-    
-    
-    
-    
     
