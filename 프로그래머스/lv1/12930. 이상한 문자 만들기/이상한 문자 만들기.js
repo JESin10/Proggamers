@@ -5,21 +5,21 @@
 
 function solution(s) {
     var answer = '';    
-    let arr = s.split(' '); //arr[0], arr[1], arr[2]
+    let arr = s.split(" "); //arr[0], arr[1], arr[2]
     //arr[a][b]라 두면
     for(let a=0 ; a<arr.length ; a++){
         for(let b=0 ; b<arr[a].length ; b++){
             if(b%2===0){
                 answer += arr[a][b].toUpperCase();
             }else {
-                answer += arr[a][b].toLowerCase(); //대소문자 변경 ⭐️
+                answer += arr[a][b].toLowerCase(); 
             }   
         }
-        if(a<arr.length-1){ // 마지막에는 공백을 추가하면 안된다..⭐️
+        if(a<arr.length-1){ // 마지막에는 공백을 추가하면 안된다..
           answer += " ";
         }
     }
-    //console.log(answer);
+    console.log(answer);
     return answer;
 }
 
