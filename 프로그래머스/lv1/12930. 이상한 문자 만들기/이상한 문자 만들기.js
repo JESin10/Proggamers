@@ -12,14 +12,14 @@ function solution(s) {
             if(b%2===0){
                 answer += arr[a][b].toUpperCase();
             }else {
-                answer += arr[a][b].toLowerCase();
+                answer += arr[a][b].toLowerCase(); //대소문자 변경 ⭐️
             }   
         }
-        if(a<arr.length-1){ //0부터 시작하므로 마지막에는 공백을 추가하면 안된다..
-         answer += " ";
+        if(a<arr.length-1){ // 마지막에는 공백을 추가하면 안된다..⭐️
+          answer += " ";
         }
     }
-    console.log();
+    //console.log(answer);
     return answer;
 }
 
