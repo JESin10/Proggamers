@@ -8,6 +8,4 @@ function solution(strings, n) {
     })
     return answer;
 }
-
-
  
