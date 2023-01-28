@@ -1,7 +1,7 @@
 function solution(n) {
     let arr = [...Array(n)].map((a, b)=> b+1) 
                 .filter((c)=> n%c==0);
-    return arr.reduce((a, b)=> a + b *1 , 0); 
+    return arr.reduce((a, b)=> a + b, 0); 
 }
 
 // function solution(n) {
@@ -13,5 +13,4 @@ function solution(n) {
 //     //console.log(arr)
 //     return arr.reduce((a, b)=> a + b *1 , 0); //더하기
 // }
-
 
