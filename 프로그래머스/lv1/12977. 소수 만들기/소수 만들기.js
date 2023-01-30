@@ -25,13 +25,13 @@
 // //이 수를  자연수 1과 자기자신으로 나눈 나머지가 0이 나왔을때만 카운트1을 하고 아닐때는 카운트하지 않느다.
 
 function solution(nums) {
-    var answer = 0, number=0;
-    for(var i=0;i<nums.length-2;i++){
-        for(var j=i+1;j<nums.length-1;j++){
-            for(var l=j+1;l<nums.length;l++){
+    let answer = 0, number=0;
+    for(let i=0;i<nums.length-2;i++){
+        for(let j=i+1;j<nums.length-1;j++){
+            for(let l=j+1;l<nums.length;l++){
                 number=nums[i]+nums[j]+nums[l];
-                var count=0;
-                for(var k=1;k<=number;k++){
+                let count=0;
+                for(let k=1;k<=number;k++){
                     if(number%k==0) count++;
                 }
                 if(count==2) answer++;
