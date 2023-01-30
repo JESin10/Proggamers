@@ -10,8 +10,8 @@ function solution(numbers) {
           answer.push(numbers[i] + numbers[j]);
         }
     }
-    let result = new Set(answer.sort((a, b)=>a-b));
-    //console.log(result)
+    let result = new Set(answer.sort((a, b)=>a-b)); 
+    console.log(result)
     return [...result];
 }
 
