@@ -12,14 +12,11 @@ function solution(answers) {
     
     let max = Math.max(AA1,AA2,AA3); 
 
-    let arr0 = [AA1, AA2, AA3].filter((v, i) => {
-            if (v == max) {
-                answer.push(i+1);
-            }
-    });
+    let arr0 = [AA1, AA2, AA3].filter((v, i) => { (v == max) ? answer.push(i+1):''});
   
-    // if (a1 === max) {answer.push(1)};
-    // if (a2 === max) {answer.push(2)};
-    // if (a3 === max) {answer.push(3)};
-    return answer;
+//     if (AA1 === max) {answer.push(1)};
+//     if (AA2 === max) {answer.push(2)};
+//     if (AA3 === max) {answer.push(3)};
+    
+    return answer.sort();
 }
