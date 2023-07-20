@@ -11,3 +11,10 @@ function solution(my_string) {
     }
     return answer.join(""); 
 }
+
+//map 사용
+//function solution(my_string) {
+//    let answer = my_string.split('').map(n => n === n.toUpperCase() ? n.toLowerCase() : n.toUpperCase())
+//이때 n이 arr[1]과 같이 배열의 각 문자를 의미
+//    return answer.join('')
+//}
