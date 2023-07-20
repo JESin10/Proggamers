@@ -4,11 +4,16 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
+let input = [];
+
 rl.on('line', function (line) {
-    input = line;
+    input = line.split(' ');
 }).on('close', function () {
-    let inputNum = Number(input);
-    for (let i = 1; i <= inputNum; i++) {
-        console.log('*'.repeat(i))
-    }
+    solution(Number(input[0]));
 });
+
+function solution(n) {
+    for(let i = 1; i < n + 1; i++) {
+        console.log('*'.repeat(i));
+    }
+}
